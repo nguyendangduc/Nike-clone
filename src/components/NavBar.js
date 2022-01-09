@@ -139,7 +139,7 @@ function NavBar() {
               </li>
             </ul>
 
-            {!isAuth ? (
+            {isAuth ? (
               <>
                 <img
                   src={userData.avatar}

@@ -3,6 +3,7 @@ import { Redirect } from "react-router";
 import { useSelector } from "react-redux";
 import { User } from "../../../../services/models/models";
 import { useAppSelector } from "../../../../services/store";
+import {useLocation} from 'react-router-dom'
 
 interface Props {
   ifInaccessibleRedirectTo: string;
@@ -13,6 +14,8 @@ const AuthenticatedGuard: FC<Props> = (props) => {
 
   const { isAuth } = useAppSelector((state) => state.authReducer);
 
+  const location:any = useLocation() 
+  console.log(location);
   useEffect(() => {
     // const unsubscribe = store.subscribe(() => {
     //   setAuthenticated(isUserHavingToken(store.getState().user))
@@ -33,7 +36,7 @@ const AuthenticatedGuard: FC<Props> = (props) => {
         <Redirect
           to={{
             pathname: ifInaccessibleRedirectTo,
-            state: { referrer: "/cart" },
+            state: { referrer: location?.cart },
           }}
         />
       )}
