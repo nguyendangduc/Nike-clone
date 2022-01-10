@@ -115,12 +115,8 @@ function App() {
         </Router>
       </ContextElement.Provider>
       <Footer />
-<<<<<<< HEAD
 // ducnd16
 
-=======
-      dai
->>>>>>> 6f521a26407eba80323489b8387d894ff07f24c3
     </>
   );
 }
