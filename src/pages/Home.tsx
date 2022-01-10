@@ -61,7 +61,6 @@ function Home() {
                     <Link to="/products">See Products</Link>
                 </button>
             </section>
-            dai
         </div>
     );
 }
