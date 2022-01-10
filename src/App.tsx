@@ -115,8 +115,12 @@ function App() {
         </Router>
       </ContextElement.Provider>
       <Footer />
+<<<<<<< HEAD
 // ducnd16
 
+=======
+      ffdai
+>>>>>>> daihv3
     </>
   );
 }
