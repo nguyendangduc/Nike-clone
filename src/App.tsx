@@ -121,8 +121,4 @@ function App() {
 
 export default App;
 
-<<<<<<< HEAD
-// 
-=======
 // duc
->>>>>>> ducnd16
