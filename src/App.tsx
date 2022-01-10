@@ -115,8 +115,10 @@ function App() {
         </Router>
       </ContextElement.Provider>
       <Footer />
+      dai
     </>
   );
 }
 
 export default App;
+
